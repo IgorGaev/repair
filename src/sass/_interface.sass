@@ -1,5 +1,15 @@
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
 body
-  +reg
+  +reg  
+  color: $text-color
+
+a
+  text-decoration: none
+  color: $text-color
 
 img 
   max-width: 100%    
@@ -26,7 +36,20 @@ img
   
 .button
   border-radius: 10px
-  background-color: $mail-color
+  background-color: $main-color
   border: none 
   padding: 17px 29px
   font-size: 13px
+  &:hover
+    cursor: pointer
+    background-color: lighten($main-color, 10%)
+
+.input
+  box-sizing: border-box
+  border-radius: 10px
+  border: 1px solid #dddddd
+  color: $input_text-color
+  font-size: 15px
+  line-height: 24px
+
+

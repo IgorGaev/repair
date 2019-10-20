@@ -1,0 +1,120 @@
+.offer
+  box-sizing: border-box
+  background: url(../img/offer/offer_bg.jpg) no-repeat
+  background-position: center right
+  background-size: contain
+  position: relative
+  &::before
+      content: ''
+      width: 50%
+      height: 100%
+      background-color: $white_section-color
+      position: absolute
+      top: 0
+      left: 0
+  &-block
+    padding: 80px 91px 94px 0
+    background-color: #fff
+    position: relative
+    width: 50%  
+    // background-color: green
+  &__title
+    width: 70%
+    font-size: 24px
+    line-height: 36px
+    margin: 0
+    margin-bottom: 20px
+    +bold
+  &-form
+    box-sizing: border-box
+    &__title
+      display: block
+      width: 50%
+      font-size: 16px
+    &__inputs
+      margin-top: 29px
+      display: flex
+    &__input
+      width: 240px
+      padding: 20px 24px
+      margin-bottom: 31px
+      &:first-child
+        margin-right: 14px
+      &:last-child
+        padding-left: 31px
+    &__button
+      width: 100%
+      margin-bottom: 28px
+      font-size: 16px
+      padding: 25px 0
+      +bold
+  &-info
+    display: flex
+    justify-content: space-between
+    font-size: 15px
+    line-height: 24px
+    &__item
+      width: 46%
+      &:last-child
+        padding-left: 29px
+    &__text
+      width: 100%    
+    &__phone
+      +bold
+      text-decoration: none 
+
+@media ( max-width: 1200px )
+  .offer
+    &__title
+      width: 100%
+    &-form
+      &__title
+        width: 100%
+      &__inputs
+        flex-direction: column
+      &__input
+        width: 100%
+        margin-bottom: 10px
+      &__button
+        font-size: 13px
+    &-info
+      flex-direction: column
+      align-items: center
+      &__item
+        width: 100%
+        &:last-child
+          padding-left: 0px
+
+
+@media (max-width: 798px )
+  .offer
+    background: $white_section-color
+    &__title
+      font-size: 18px
+      line-height: 1.2
+      padding-right: 5px
+      margin-bottom: 16px
+    &-block
+      width: 99%
+      padding: 54px 0px 94px 0
+    &-form
+      &__title     
+        font-size: 14px
+      &__input
+        margin-bottom: 8px
+      &__button
+        padding: 20px 40px
+        font-size: 14px
+        margin-bottom: 20px
+    &-info__text
+      width: 90%
+      margin-bottom: 10px
+
+
+                    
+
+
+
+
+
+
