@@ -507,4 +507,102 @@ img {
     margin-bottom: 10px;
   }
 }
+
+/* =========================================================== */
+/* Modal */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  color: #333333;
+  position: relative;
+  margin: auto;
+  max-width: 570px;
+  width: 90%;
+  min-width: 200px;
+  background-color: #fff;
+  padding: 80px 100px 76px 100px;
+}
+
+.modal-dialog__title {
+  text-align: center;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 52px;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal-form__subtitle {
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  line-height: 35px;
+  margin-bottom: 53px;
+}
+
+.modal-form__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-form__input {
+  padding: 26px;
+}
+
+.modal-form__input:first-child {
+  margin-bottom: 15px;
+}
+
+.modal-form__input:last-child {
+  margin-bottom: 30px;
+}
+
+.modal-form__button {
+  width: 100%;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 28px;
+  margin-bottom: 33px;
+  font-family: "Museo Sans 700", sans-serif;
+  font-weight: 700;
+}
+
+.modal-info__text {
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 13px;
+}
+
+.modal-info__phone {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Museo Sans 700", sans-serif;
+  font-weight: 700;
+}
 /*# sourceMappingURL=style.css.map */
