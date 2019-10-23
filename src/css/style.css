@@ -682,7 +682,50 @@ img {
   font-weight: 700;
 }
 
-@media (orientation: landscape) {
+@media (max-width: 798px) {
+  .modal-dialog {
+    padding: 20px 15px;
+    width: 50%;
+  }
+  .modal-dialog__title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+  .modal-form__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .modal-form__input {
+    padding: 10px;
+    font-size: 10px;
+  }
+  .modal-form__input:first-child {
+    margin-bottom: 10px;
+  }
+  .modal-form__input:last-child {
+    margin-bottom: 15px;
+  }
+  .modal-form__button {
+    padding: 12px;
+    font-size: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .modal-info__text {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    margin-bottom: 5px;
+    width: 70%;
+  }
+  .modal-info__phone {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 620px) and (orientation: landscape) {
   .modal-dialog {
     padding: 30px 30px;
     width: 80%;
