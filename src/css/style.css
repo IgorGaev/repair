@@ -78,11 +78,17 @@ img {
   border: none;
   padding: 17px 29px;
   font-size: 13px;
+  outline: none;
 }
 
 .button:hover {
   cursor: pointer;
   background-color: #ffdb33;
+}
+
+.button:focus {
+  outline: none;
+  background-color: #cca800;
 }
 
 .input {
@@ -93,6 +99,16 @@ img {
   color: #999999;
   font-size: 15px;
   line-height: 24px;
+}
+
+.input:focus {
+  border: 1px solid #cca800;
+  outline: none;
+}
+
+.close {
+  width: 10px;
+  height: 10px;
 }
 
 /* ================================================== */
@@ -275,6 +291,7 @@ img {
     width: 100%;
   }
   .hero-image {
+    margin-top: 25px;
     width: 100%;
   }
 }
@@ -301,25 +318,25 @@ img {
   }
   .hero-text__title {
     margin: 0 0 6px 0;
-    font-size: 22px;
-    line-height: 1.3;
+    font-size: 24px;
+    line-height: 1.2;
     padding-left: 2px;
   }
   .hero-text__subtitle {
     font-size: 16px;
-    margin-bottom: 24px;
-    line-height: 1.3;
+    margin-bottom: 28px;
+    line-height: 1.2;
     padding-left: 4px;
     width: 90%;
   }
   .hero-list__item {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
   }
   .hero-list__item:last-child {
     margin-bottom: 0;
   }
   .hero-list__icon {
-    margin-right: 13px;
+    margin-right: 16px;
   }
   .hero-list__text {
     width: 75%;
@@ -363,7 +380,7 @@ img {
 .offer__title {
   width: 70%;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 35px;
   margin: 0;
   margin-bottom: 20px;
   font-family: "Museo Sans 700", sans-serif;
@@ -441,6 +458,9 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .offer-block {
+    padding: 60px 91px 60px 0;
+  }
   .offer__title {
     width: 100%;
   }
@@ -456,6 +476,9 @@ img {
   .offer-form__input {
     width: 100%;
     margin-bottom: 10px;
+  }
+  .offer-form__input:last-child {
+    padding-left: 23px;
   }
   .offer-form__button {
     font-size: 13px;
@@ -477,6 +500,28 @@ img {
   }
 }
 
+@media (max-width: 1022px) {
+  .offer-block {
+    padding: 30px 30px 30px 0;
+  }
+  .offer__title {
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .offer-form {
+    width: 90%;
+  }
+  .offer-form__inputs {
+    margin-top: 10px;
+  }
+  .offer-form__title {
+    width: 100%;
+  }
+  .offer-form__button {
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 798px) {
   .offer {
     background: #fff;
@@ -488,8 +533,9 @@ img {
     margin-bottom: 16px;
   }
   .offer-block {
-    width: 99%;
+    width: 70%;
     padding: 54px 0px 94px 0;
+    margin: auto;
   }
   .offer-form__title {
     font-size: 14px;
@@ -505,6 +551,25 @@ img {
   .offer-info__text {
     width: 90%;
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .offer-block {
+    width: 100%;
+    padding: 48px 0px 94px 0;
+  }
+  .offer-form {
+    width: 99%;
+  }
+  .offer-form__title {
+    margin-bottom: 28px;
+  }
+  .offer-info {
+    width: 94%;
+  }
+  .offer-info__item {
+    width: 97%;
   }
 }
 
@@ -542,12 +607,23 @@ img {
   font-size: 22px;
   line-height: 33px;
   margin-bottom: 52px;
+  font-family: "Museo Sans 700", sans-serif;
+  font-weight: 700;
 }
 
 .modal-dialog__close {
   position: absolute;
   top: 0;
   right: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.modal-dialog__close:hover {
+  cursor: pointer;
+  background-color: #ffdb33;
+  outline: none;
+  border: 1px solid #cca800;
 }
 
 .modal-form__subtitle {
@@ -604,5 +680,91 @@ img {
   line-height: 24px;
   font-family: "Museo Sans 700", sans-serif;
   font-weight: 700;
+}
+
+@media (max-width: 606px) {
+  .modal-dialog {
+    padding: 30px 30px;
+    width: 80%;
+  }
+  .modal-dialog__title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+  .modal-form__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+  .modal-form__input {
+    padding: 10px;
+    font-size: 10px;
+  }
+  .modal-form__input:first-child {
+    margin-bottom: 5px;
+  }
+  .modal-form__input:last-child {
+    margin-bottom: 5px;
+  }
+  .modal-form__button {
+    padding: 12px;
+    font-size: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .modal-info__text {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    margin-bottom: 5px;
+    width: 70%;
+  }
+  .modal-info__phone {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .modal-dialog {
+    padding: 20px 15px;
+    width: 80%;
+  }
+  .modal-dialog__title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+  .modal-form__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .modal-form__input {
+    padding: 10px;
+    font-size: 10px;
+  }
+  .modal-form__input:first-child {
+    margin-bottom: 10px;
+  }
+  .modal-form__input:last-child {
+    margin-bottom: 15px;
+  }
+  .modal-form__button {
+    padding: 12px;
+    font-size: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .modal-info__text {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    margin-bottom: 5px;
+    width: 70%;
+  }
+  .modal-info__phone {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

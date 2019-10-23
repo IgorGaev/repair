@@ -21,11 +21,19 @@
       text-align: center
       font-size: 22px
       line-height: 33px
-      margin-bottom: 52px     
+      margin-bottom: 52px
+      +bold     
     &__close
       position: absolute
       top: 0
       right: 0
+      width: 30px
+      height: 30px
+      &:hover
+        cursor: pointer
+        background-color: lighten($main-color, 10%)
+        outline: none
+        border: 1px solid darken($main-color, 10%)
   &-form
     &__subtitle
       text-align: center
@@ -61,6 +69,80 @@
       font-size: 24px
       line-height: 24px
       +bold
+@media ( max-width: 606px )
+  .modal
+    &-dialog
+      padding: 30px 30px
+      width: 80%
+      &__title
+        font-size: 16px
+        line-height: 24px
+        margin-bottom: 5px
+    &-form
+      &__subtitle
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 5px
+      &__input
+        padding: 10px
+        font-size: 10px
+        &:first-child
+          margin-bottom: 5px
+        &:last-child
+          margin-bottom: 5px  
+      &__button
+        padding: 12px
+        font-size: 10px
+        margin-top: 0
+        margin-bottom: 10px
+    &-info
+      &__text
+        margin-left: auto
+        margin-right: auto
+        font-size: 12px
+        margin-bottom: 5px
+        width: 70%
+      &__phone
+        font-size: 14px
+
+@media ( max-width: 450px )
+  .modal
+    &-dialog
+      padding: 20px 15px
+      width: 80%
+      &__title
+        font-size: 16px
+        line-height: 24px
+        margin-bottom: 25px
+    &-form
+      &__subtitle
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 20px
+      &__input
+        padding: 10px
+        font-size: 10px
+        &:first-child
+          margin-bottom: 10px
+        &:last-child
+          margin-bottom: 15px  
+      &__button
+        padding: 12px
+        font-size: 10px
+        margin-top: 0
+        margin-bottom: 10px
+    &-info
+      &__text
+        margin-left: auto
+        margin-right: auto
+        font-size: 12px
+        margin-bottom: 5px
+        width: 70%
+      &__phone
+        font-size: 14px      
+
+
+
 
 
 

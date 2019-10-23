@@ -40,9 +40,13 @@ img
   border: none 
   padding: 17px 29px
   font-size: 13px
+  outline: none
   &:hover
     cursor: pointer
     background-color: lighten($main-color, 10%)
+  &:focus
+    outline: none
+    background-color: darken($main-color, 10%)  
 
 .input
   box-sizing: border-box
@@ -51,5 +55,12 @@ img
   color: $input_text-color
   font-size: 15px
   line-height: 24px
+  &:focus
+    border: 1px solid darken(#ffd200, 10% )
+    outline: none
+
+.close
+  width: 10px
+  height: 10px      
 
 
