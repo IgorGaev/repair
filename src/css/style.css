@@ -682,7 +682,7 @@ img {
   font-weight: 700;
 }
 
-@media (max-width: 606px) {
+@media (orientation: landscape) {
   .modal-dialog {
     padding: 30px 30px;
     width: 80%;
