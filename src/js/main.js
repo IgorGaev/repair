@@ -1,20 +1,20 @@
 var btn = document.querySelector('#button');
 var modal = document.querySelector('#modal');
 var close = document.querySelector('#close');
+var timerId = 0;
 
-function removeModalActive () {
+function showModal () {  
+  modal.classList.add('modal_active');
+  timerId = setTimeout(() => modal.classList.remove('modal_active'), 5000);
+  btn.blur();
+};
 
+function hideModal () {
+  clearTimeout(timerId);
   modal.classList.remove('modal_active');
 };
 
-function addModalActive () {
+btn.addEventListener('click', showModal);
+close.addEventListener('click', hideModal);
 
-  modal.classList.add('modal_active');
-  setTimeout('removeModalActive()', 5000);
-  btn.blur();
-
-};
-
-btn.addEventListener('click', addModalActive);
-close.addEventListener('click', removeModalActive);
 
