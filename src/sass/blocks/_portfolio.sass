@@ -9,7 +9,8 @@
   &-slider
     margin: auto
   &__image
-    margin: auto  
+    margin: auto
+    outline: none  
   &__arrows
     max-width: 120px
     margin: auto
@@ -17,12 +18,15 @@
     display: flex
     justify-content: space-between 
 
-@media ( max-width: 1200px )
+@media ( max-width: 1200px )    
   .portfolio
     &__title
       max-width: 100%
       margin-bottom: 50px
     &-slider
+
+  .slick-slide img
+    width: 95%   
 
 
 @media ( max-width: 798px )
