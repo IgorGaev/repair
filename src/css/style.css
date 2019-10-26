@@ -72,6 +72,14 @@ img {
   }
 }
 
+.section-title {
+  font-size: 30px;
+  line-height: 45px;
+  font-family: "Museo Sans 700", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
 .button {
   border-radius: 10px;
   background-color: #ffd200;
@@ -104,6 +112,10 @@ img {
 .input:focus {
   border: 1px solid #cca800;
   outline: none;
+}
+
+.arrow:hover {
+  cursor: pointer;
 }
 
 .close {
@@ -557,7 +569,7 @@ img {
 @media (max-width: 450px) {
   .offer-block {
     width: 100%;
-    padding: 48px 0px 94px 0;
+    padding: 48px 0px 38px 0;
   }
   .offer-form {
     width: 99%;
@@ -811,6 +823,8 @@ img {
   }
 }
 
+/* =========================================================== */
+/* Кнопка вверх */
 #button-up {
   display: inline-block;
   background-color: #ffd200;
@@ -850,5 +864,82 @@ img {
   font-size: 2em;
   line-height: 50px;
   color: #fff;
+}
+
+/* =========================================================== */
+/* Портфолио слайдер */
+.portfolio {
+  padding: 85px 0;
+  background: #f5f5f5 url("../img/portfolio/portfolio_pattern.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  max-width: 75%;
+  margin: auto;
+  margin-bottom: 91px;
+}
+
+.portfolio-slider {
+  margin: auto;
+}
+
+.portfolio__image {
+  margin: auto;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .portfolio__title {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 798px) {
+  .portfolio {
+    padding: 42px 0;
+  }
+  .portfolio__title {
+    max-width: 75%;
+    font-size: 18px;
+    line-height: 1.2;
+    padding-right: 5px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .portfolio {
+    background: #f5f5f5;
+    padding: 41px 25px 57px 25px;
+  }
+  .portfolio__title {
+    margin: 0;
+    padding: 0;
+    max-width: 271px;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .portfolio-slider {
+    max-height: 186px;
+  }
+  .portfolio__image {
+    max-height: 186px;
+  }
+  .portfolio__arrows {
+    margin-top: 46px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
