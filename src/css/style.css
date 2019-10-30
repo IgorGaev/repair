@@ -1115,6 +1115,9 @@ img {
     line-height: 18px;
     padding-right: 10px;
   }
+  .prices-card__link::after {
+    width: 92%;
+  }
 }
 
 @media (max-width: 620px) and (orientation: landscape) {

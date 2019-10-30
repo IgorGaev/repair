@@ -19,14 +19,14 @@
   <nav class="navbar">
     <div class="container">
       <div class="navbar-block">
-        <div class="navbar__logo">
+        <div class="navbar__logo wow flipInX" data-wow-delay="1s">
           <img src="img/nav_logo.png" alt="логотип">
         </div>
         <!-- /.navbar__logo -->
         <div class="navbar__info">
           <div class="navbar__contacts">
             <span class="navbar__address">Калуга, Москва, МО</span>
-            <a class="navbar__phone" href="tel:+7(495)42-251-31">+7 (495) 42-251-31</a>
+            <a class="navbar__phone wow heartBeat" data-wow-delay="2s" href="tel:+7(495)42-251-31">+7 (495) 42-251-31</a>
           </div>
           <!-- /.navbar__contacts -->
           <button class="button navbar__button" id="button">
@@ -72,7 +72,7 @@
             </ul>
           </div>
           <!-- /.hero-text -->
-          <div class="hero-image">
+          <div class="hero-image wow fadeInRight">
             <img src="img/hero/hero_picture.png" alt="Планировка комнаты">
           </div>
           <!-- /.hero-image -->
@@ -85,7 +85,7 @@
 
     <section class="offer">
       <div class="container">
-        <div class="offer-block">
+        <div class="offer-block ">
           <h2 class="offer__title">
             Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
           </h2>
@@ -97,7 +97,7 @@
               <input type="text" class="input offer-form__input" placeholder="Ваше имя">
               <input type="tel" class="input offer-form__input" placeholder="Ваш телефон">
             </div>
-            <button class="button offer-form__button">
+            <button class="button offer-form__button wow tada">
               Получить бесплатный дизайн-проект
             </button>
           </form>
@@ -127,7 +127,7 @@
         <h2 class="portfolio__title section-title">
           Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и&nbsp;домах
         </h2>
-        <div class="portfolio-slider">
+        <div class="portfolio-slider wow fadeInUp">
           <div class="slider-item"><img class="portfolio__image" src="img/portfolio/portfolio_img_1.jpg" alt=""></div>
           <div class="slider-item"><img class="portfolio__image" src="img/portfolio/portfolio_img_2.jpg" alt=""></div>
           <div class="slider-item"><img class="portfolio__image" src="img/portfolio/portfolio_img_3.jpg" alt=""></div>
@@ -150,36 +150,48 @@
           <span class="section-subtitle prices__subtitle">Прайс на наши услуги</span>
           <!-- /.section-subtitle -->
           <div class="prices-cards">
-            <div class="prices-card wow fadeInUp" data-wow-duration="0.2s" >
-              <div class="prices-card__image"><img src="img/prices/livingroom.png" alt=""></div>
-              <span class="prices-card__text">Ремонт ванных комнат и с/у</span>
-              <a href="#" class="prices-card__link">Узнать цены</a>
-            </div>
-            <div class="prices-card wow fadeInUp" data-wow-duration="0.4s">
-              <div class="prices-card__image"><img src="img/prices/bathroom.png" alt=""></div>
-              <span class="prices-card__text">Ремонт комнат и квартир</span>
-              <a href="#" class="prices-card__link">Узнать цены</a>
-            </div>
-            <div class="prices-card wow fadeInUp" data-wow-duration="0.6s" >
-              <div class="prices-card__image"><img src="img/prices/office.png" alt=""></div>
-              <span class="prices-card__text">Отделка офисных помещений</span>
-              <a href="#" class="prices-card__link">Узнать цены</a>
-            </div>
-            <div class="prices-card wow fadeInUp" data-wow-duration="0.8s" >
-              <div class="prices-card__image"><img src="img/prices/mansarda.png" alt=""></div>
-              <span class="prices-card__text">Ремонт в новостройках</span>
-              <a href="#" class="prices-card__link">Узнать цены</a>
-            </div>
-            <div class="prices-card wow fadeInUp" data-wow-duration="1s">
-              <div class="prices-card__image"><img src="img/prices/kitchen.png" alt=""></div>
-              <span class="prices-card__text">Ремонт кухонь</span>
-              <a href="#" class="prices-card__link">Узнать цены</a>
-            </div>
-            <div class="prices-card wow fadeInUp" data-wow-duration="1.2s" >
-              <div class="prices-card__image"><img src="img/prices/novostroi.png" alt=""></div>
-              <span class="prices-card__text">Ремонт дач и коттеджей</span>
-              <a href="#" class="prices-card__link">Узнать цены</a>
-            </div>
+            <a href="#">
+              <div class="prices-card wow fadeInUp" data-wow-duration="0.2s" >
+                <div class="prices-card__image"><img src="img/prices/livingroom.png" alt=""></div>
+                <span class="prices-card__text">Ремонт ванных комнат и с/у</span>
+                <span class="prices-card__link">Узнать цены</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="prices-card wow fadeInUp" data-wow-duration="0.4s">
+                <div class="prices-card__image"><img src="img/prices/bathroom.png" alt=""></div>
+                <span class="prices-card__text">Ремонт комнат и квартир</span>
+                <span class="prices-card__link">Узнать цены</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="prices-card wow fadeInUp" data-wow-duration="0.6s" >
+                <div class="prices-card__image"><img src="img/prices/office.png" alt=""></div>
+                <span class="prices-card__text">Отделка офисных помещений</span>
+                <span class="prices-card__link">Узнать цены</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="prices-card wow fadeInUp" data-wow-duration="0.8s" >
+                <div class="prices-card__image"><img src="img/prices/mansarda.png" alt=""></div>
+                <span class="prices-card__text">Ремонт в новостройках</span>
+                <span class="prices-card__link">Узнать цены</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="prices-card wow fadeInUp" data-wow-duration="1s">
+                <div class="prices-card__image"><img src="img/prices/kitchen.png" alt=""></div>
+                <span class="prices-card__text">Ремонт кухонь</span>
+                <span class="prices-card__link">Узнать цены</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="prices-card wow fadeInUp" data-wow-duration="1.2s" >
+                <div class="prices-card__image"><img src="img/prices/novostroi.png" alt=""></div>
+                <span class="prices-card__text">Ремонт дач и коттеджей</span>
+                <span class="prices-card__link">Узнать цены</span>
+              </div>
+            </a>
           </div>
           <!-- /.cards -->
         </div>
