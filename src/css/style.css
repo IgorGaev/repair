@@ -1104,6 +1104,7 @@ img {
   }
   .prices-card {
     padding-bottom: 25px;
+    display: block;
   }
   .prices-card__text {
     font-size: 14px;
