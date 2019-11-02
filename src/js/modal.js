@@ -7,8 +7,8 @@ $(function () {
 
   $(btn).click(function () {
     modal.addClass('modal_active');
-    timerId = setTimeout(() => modal.removeClass('modal_active'), 5000);
-    btn.blur();
+    // timerId = setTimeout(() => modal.removeClass('modal_active'), 5000);
+    // btn.blur();
   })
 
   $(close).click(function () {
