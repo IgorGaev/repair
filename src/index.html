@@ -294,20 +294,26 @@
     <div class="container">
       <div class="contacts-block">
         <div class="contacts">
-          <h3 class="contacts__title"> Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта</h3>
+          <h3 class="contacts__title"> Приезжайте к нам в гости! Проконсультируем Вас по&nbsp;всем вопросам ремонта</h3>
           <ul class="contacts-list">
             <li class="contacts-list__item">
-              <span class="contacts-list__icon"><img src="img/footer/placeholder.png" alt=""></span>
-              <span class="contacts-list__text">г. Москва<br> ул. Ленинга, д. 10, корпус 2, оф. 308</span>
+              <div class="contacts-list__icon">
+                <img src="img/footer/placeholder.png" alt="">
+              </div>
+              <span class="contacts-list__text">г. Москва<br><b>ул. Ленинга, д. 10, корпус 2, оф.&nbsp;308</b></span>
             </li>
             <li class="contacts-list__item">
-              <span class="contacts-list__icon"><img src="img/footer/clock.png" alt="">
+              <div class="contacts-list__icon">
+                <img src="img/footer/clock.png" alt="">
+              </div>
+              <span class="contacts-list__text">Режим работы:<br> <b>с 9:00 до 18:00</b></span>
+            </li>
+            <li class="contacts-list__item">
+              <div class="contacts-list__icon">
+                <img src="img/footer/phone.png" alt="">
+              </div>
+              <span class="contacts-list__text">Телефон:<br><b><a href="tel:+7(495)42-251-31">+ 7 (495)42-251-31</a></b>
               </span>
-              <span class="contacts-list__text">Режим работы:<br> с 9:00 до 18:00</span>
-            </li>
-            <li class="contacts-list__item">
-              <span class="contacts-list__icon"><img src="img/footer/phone.png" alt=""></span>
-              <span class="contacts-list__text">Телефон:<br> <a href="tel:+7(495)42-251-31">+ 7 (495)42-251-31</a></span>
             </li>
           </ul>
         </div>          
@@ -363,88 +369,10 @@
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
+  <script src="js/validation.js"></script>
 
   <script>
     new WOW().init();
-
-    $(document).ready(function () {
-
-      $(".phone").mask("8 (999) 999-99-99");
-
-      $('#offer-form').validate({
-        errorClass: "invalid",
-        rules: {
-          username: {
-            required: true,
-            minlength: 2,
-            maxlength: 15
-          },
-          phone: {
-            required: true,
-          }
-        },
-        messages: {
-          username: {
-            required: "Заполните поле",
-            minlength: "Введите не менее 2 символов",
-            maxlength: "Введите не более 15 символов"
-          },
-          phone: "Введите номер телефона"
-        }
-      })
-
-      $('#brif-form').validate({
-        errorClass: "invalid",
-        rules: {
-          username: {
-            required: true,
-            minlength: 2,
-            maxlength: 15
-          },
-          phone: {
-            required: true,
-          },
-          email: {
-            required: true,
-            email: true
-          }
-        },
-        messages: {
-          username: {
-            required: "Заполните поле",
-            minlength: "Введите не менее 2 символов",
-            maxlength: "Введите не более 15 символов"
-          },
-          phone: "Введите номер телефона",
-          email: {
-            required: "Заполните поле",
-            email: "Введите корректный email"
-          }
-        }
-      })
-
-      $('#modal-form').validate({
-        errorClass: "invalid",
-        rules: {
-          username: {
-            required: true,
-            minlength: 2,
-            maxlength: 15
-          },
-          phone: {
-            required: true,
-          }
-        },
-        messages: {
-          username: {
-            required: "Заполните поле",
-            minlength: "Введите не менее 2 символов",
-            maxlength: "Введите не более 15 символов"
-          },
-          phone: "Введите номер телефона"
-        }
-      })
-    })
   </script>
 
 </body>
