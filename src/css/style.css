@@ -42,9 +42,44 @@ img {
   margin: auto;
 }
 
-.error {
-  font-size: 14px;
+.input-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input.invalid {
+  display: block;
+  border: 1px solid red;
+  margin-bottom: 2px;
+}
+
+input.invalid:focus {
+  border: 1px solid red;
+}
+
+input.invalid:first-child {
+  margin-bottom: 2px;
+}
+
+input.invalid:last-child {
+  margin-bottom: 2px;
+}
+
+label.invalid {
+  width: 100%;
+  display: block;
+  text-align: left;
+  font-size: 12px;
   color: red;
+  margin-left: 5px;
 }
 
 @media (max-width: 1200px) {
@@ -507,6 +542,9 @@ img {
   .offer-form__input {
     width: 100%;
     margin-bottom: 10px;
+  }
+  .offer-form__input:first-child {
+    margin-right: 0px;
   }
   .offer-form__input:last-child {
     padding-left: 23px;
@@ -1371,6 +1409,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .brif__interview {
@@ -1479,9 +1520,16 @@ img {
 @media (max-width: 1200px) {
   .brif {
     padding-top: 40px;
+    background-size: 50%, auto;
   }
   .brif__form {
-    padding-left: 30px;
+    padding-left: 80px;
+  }
+  .brif__input {
+    max-width: 100%;
+  }
+  .brif__button {
+    max-width: 100%;
   }
   .interview {
     padding-right: 30px;
@@ -1514,7 +1562,7 @@ img {
   .brif {
     background-image: url("../img/brif/brif_bg_color.jpg"), url("../img/brif/brif_bg.jpg");
     background-position: top center, center bottom;
-    background-size: 100% 48%, cover;
+    background-size: 100% 44%, cover;
     background-repeat: repeat-x, no-repeat;
   }
   .brif-block {
@@ -1526,6 +1574,15 @@ img {
   .brif__form {
     padding-left: 0;
   }
+  .brif__input {
+    max-width: 70%;
+  }
+  .brif__button {
+    max-width: 70%;
+  }
+  label.error {
+    width: 70%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1533,11 +1590,16 @@ img {
     padding-top: 44px;
   }
   .brif__input {
+    max-width: 100%;
     margin-bottom: 7px;
   }
   .brif__button {
+    max-width: 100%;
     margin-top: 2px;
     font-size: 14px;
+  }
+  label.error {
+    width: 100%;
   }
   .interview {
     padding-right: 0;
@@ -1585,5 +1647,41 @@ img {
     font-size: 14px;
     max-width: 50%;
   }
+}
+
+/* =========================================================== */
+/* Стили для подвала */
+.footer {
+  position: relative;
+}
+
+.map {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.contacts__title {
+  font-family: "Museo Sans 700", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=style.css.map */

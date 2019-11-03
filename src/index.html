@@ -95,8 +95,12 @@
               Оставьте заявку на разработку бесплатного дизайн-проекта!
             </span>
             <div class="offer-form__inputs">
-              <input name="username" type="text" class="input offer-form__input" placeholder="Ваше имя">
-              <input name="phone" type="tel" class="phone input offer-form__input" placeholder="Ваш телефон">
+              <div class="input-wrap">
+                <input name="username" type="text" class="input offer-form__input" placeholder="Ваше имя">
+              </div>
+              <div class="input-wrap">
+                <input name="phone" type="tel" class="phone input offer-form__input" placeholder="Ваш телефон">
+              </div>
             </div>
             <button class="button offer-form__button wow tada">
               Получить бесплатный дизайн-проект
@@ -255,9 +259,17 @@
             <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
             <span class="form__subtitle">Для этого заполните форму ниже</span>
             <form id="brif-form" action="#">
-              <input name="username" type="text" class="input brif__input" placeholder="Ваше имя:">
-              <input name="phone" type="tel" class="phone input brif__input" placeholder="Ваш телефон:">
-              <input name="email" type="email" class="input brif__input" placeholder="Email:">
+              <div class="input-wrap">
+                <input name="username" type="text" class="input brif__input"
+                  placeholder="Ваше имя:">
+              </div>
+              <div class="input-wrap">
+                <input name="phone" type="tel" class="phone input brif__input"
+                  placeholder="Ваш телефон:">
+              </div>
+              <div class="input-wrap">
+                <input name="email" type="email" class="input brif__input" placeholder="Email:">
+              </div>              
               <button class="button brif__button">Рассчитать стоимость</button>
               <span class="form__describtion">Мы перезвоним Вам в течение 60 секунд</span>
             </form>
@@ -271,8 +283,37 @@
     </section>
     <!-- /.section brif -->
 
-
   </main>
+
+  <footer class="footer">
+    <div class="map" id="map">
+      <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1aaa48195fe2b0df6a09d65849e891e69b687fafc4feb2deffa76a7b1fe3f37a&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false">
+      </script>
+    </div>
+    <div class="container">
+      <div class="contacts-block">
+        <div class="contacts">
+          <h3 class="contacts__title"> Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта</h3>
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <span class="contacts-list__icon"><img src="img/footer/placeholder.png" alt=""></span>
+              <span class="contacts-list__text">г. Москва<br> ул. Ленинга, д. 10, корпус 2, оф. 308</span>
+            </li>
+            <li class="contacts-list__item">
+              <span class="contacts-list__icon"><img src="img/footer/clock.png" alt="">
+              </span>
+              <span class="contacts-list__text">Режим работы:<br> с 9:00 до 18:00</span>
+            </li>
+            <li class="contacts-list__item">
+              <span class="contacts-list__icon"><img src="img/footer/phone.png" alt=""></span>
+              <span class="contacts-list__text">Телефон:<br> <a href="tel:+7(495)42-251-31">+ 7 (495)42-251-31</a></span>
+            </li>
+          </ul>
+        </div>          
+      </div>
+    </div>
+  </footer>
 
 
   <!-- Модальное окно -->
@@ -326,14 +367,15 @@
   <script>
     new WOW().init();
 
-    $(document).ready(function (){
+    $(document).ready(function () {
 
       $(".phone").mask("8 (999) 999-99-99");
 
       $('#offer-form').validate({
+        errorClass: "invalid",
         rules: {
           username: {
-            required:true,
+            required: true,
             minlength: 2,
             maxlength: 15
           },
@@ -342,15 +384,20 @@
           }
         },
         messages: {
-          username: "Заполните поле",
-          phone:"Введите номер телефона"
+          username: {
+            required: "Заполните поле",
+            minlength: "Введите не менее 2 символов",
+            maxlength: "Введите не более 15 символов"
+          },
+          phone: "Введите номер телефона"
         }
       })
 
       $('#brif-form').validate({
+        errorClass: "invalid",
         rules: {
           username: {
-            required:true,
+            required: true,
             minlength: 2,
             maxlength: 15
           },
@@ -363,8 +410,12 @@
           }
         },
         messages: {
-          username: "Заполните поле",
-          phone:"Введите номер телефона",
+          username: {
+            required: "Заполните поле",
+            minlength: "Введите не менее 2 символов",
+            maxlength: "Введите не более 15 символов"
+          },
+          phone: "Введите номер телефона",
           email: {
             required: "Заполните поле",
             email: "Введите корректный email"
@@ -373,9 +424,10 @@
       })
 
       $('#modal-form').validate({
+        errorClass: "invalid",
         rules: {
           username: {
-            required:true,
+            required: true,
             minlength: 2,
             maxlength: 15
           },
@@ -384,16 +436,15 @@
           }
         },
         messages: {
-          username: "Заполните поле",
-          phone:"Введите номер телефона"
+          username: {
+            required: "Заполните поле",
+            minlength: "Введите не менее 2 символов",
+            maxlength: "Введите не более 15 символов"
+          },
+          phone: "Введите номер телефона"
         }
       })
-
-
-
-
     })
-
   </script>
 
 </body>

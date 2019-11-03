@@ -7,6 +7,7 @@
   background-repeat: repeat-y, no-repeat
   &-block
     display: flex
+    justify-content: space-between
   &__interview
     flex-basis: 50%  
   &__form
@@ -77,8 +78,14 @@
 @media ( max-width: 1200px )
   .brif
     padding-top: 40px
+    background-size: 50%, auto
     &__form
-      padding-left: 30px
+      padding-left: 80px
+    &__input
+      max-width: 100%  
+    &__button
+      max-width: 100%  
+     
   .interview
     padding-right: 30px
     padding-bottom: 50px
@@ -104,21 +111,31 @@
   .brif
     background-image: url('../img/brif/brif_bg_color.jpg'), url('../img/brif/brif_bg.jpg')
     background-position: top center, center bottom
-    background-size: 100% 48%, cover
+    background-size: 100% 44%, cover
     background-repeat: repeat-x, no-repeat
     &-block
       flex-direction: column
     &__form
-      padding-left: 0  
+      padding-left: 0
+    &__input
+      max-width: 70%        
+    &__button
+      max-width: 70%
+  label.error
+    width: 70%        
 
 @media ( max-width: 450px )
   .brif
     padding-top: 44px
     &__input
+      max-width: 100%
       margin-bottom: 7px
     &__button
+      max-width: 100%
       margin-top: 2px
-      font-size: 14px  
+      font-size: 14px
+  label.error
+    width: 100%      
   .interview
     padding-right: 0
     &__title
