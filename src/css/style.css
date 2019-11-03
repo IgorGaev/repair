@@ -620,6 +620,9 @@ label.invalid {
     width: 90%;
     margin-bottom: 10px;
   }
+  .offer label.invalid {
+    width: 100%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1580,7 +1583,7 @@ label.invalid {
   .brif__button {
     max-width: 70%;
   }
-  label.invalid {
+  .brif label.invalid {
     width: 70%;
   }
 }
@@ -1598,7 +1601,7 @@ label.invalid {
     margin-top: 2px;
     font-size: 14px;
   }
-  label.invalid {
+  .brif label.invalid {
     width: 100%;
   }
   .interview {
