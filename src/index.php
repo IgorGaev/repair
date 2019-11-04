@@ -90,7 +90,7 @@
           <h2 class="offer__title">
             Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
           </h2>
-          <form id="offer-form" action="#" class="offer-form">
+          <form action="mail.php" method="POST" id="offer-form" action="#" class="offer-form">
             <span class="offer-form__title">
               Оставьте заявку на разработку бесплатного дизайн-проекта!
             </span>
