@@ -95,11 +95,11 @@
               Оставьте заявку на разработку бесплатного дизайн-проекта!
             </span>
             <div class="offer-form__inputs">
-              <div class="input-wrap">
-                <input name="username" type="text" class="input offer-form__input" placeholder="Ваше имя">
+              <div class="input-wrap offer-form__input">
+                <input name="username" type="text" class="input" placeholder="Ваше имя">
               </div>
-              <div class="input-wrap">
-                <input name="phone" type="tel" class="phone input offer-form__input" placeholder="Ваш телефон">
+              <div class="input-wrap offer-form__input">
+                <input name="phone" type="tel" class="phone input" placeholder="Ваш телефон">
               </div>
             </div>
             <button class="button offer-form__button wow tada">
@@ -259,16 +259,16 @@
             <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
             <span class="form__subtitle">Для этого заполните форму ниже</span>
             <form id="brif-form" action="#">
-              <div class="input-wrap">
-                <input name="username" type="text" class="input brif__input"
+              <div class="input-wrap brif__input">
+                <input name="username" type="text" class="input"
                   placeholder="Ваше имя:">
               </div>
-              <div class="input-wrap">
-                <input name="phone" type="tel" class="phone input brif__input"
+              <div class="input-wrap brif__input">
+                <input name="phone" type="tel" class="phone input"
                   placeholder="Ваш телефон:">
               </div>
-              <div class="input-wrap">
-                <input name="email" type="email" class="input brif__input" placeholder="Email:">
+              <div class="input-wrap brif__input">
+                <input name="email" type="email" class="input" placeholder="Email:">
               </div>              
               <button class="button brif__button">Рассчитать стоимость</button>
               <span class="form__describtion">Мы перезвоним Вам в течение 60 секунд</span>
@@ -334,8 +334,12 @@
           Заполните поля ниже - мы свяжемся с Вами
         </span>
         <div class="modal-form__inputs">
-          <input name="username" type="text" class="input modal-form__input" placeholder="Ваше имя">
-          <input name="phone" type="tel" class="phone input modal-form__input" placeholder="Ваш телефон">
+          <div class="modal-form__input">
+            <input name="username" type="text" class="input" placeholder="Ваше имя">
+          </div>
+          <div class="modal-form__input">
+            <input name="phone" type="tel" class="phone input" placeholder="Ваш телефон">
+          </div>
         </div>
         <button class="button modal-form__button">
           Узнать стоимость

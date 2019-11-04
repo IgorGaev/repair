@@ -73,12 +73,13 @@ input.invalid:last-child {
 }
 
 label.invalid {
+  position: absolute;
+  bottom: -12px;
   width: 100%;
   display: block;
   text-align: left;
   font-size: 12px;
   color: red;
-  margin-left: 5px;
 }
 
 @media (max-width: 1200px) {
@@ -471,8 +472,8 @@ label.invalid {
 }
 
 .offer-form__input {
+  position: relative;
   width: 240px;
-  padding: 20px 24px;
   margin-bottom: 31px;
 }
 
@@ -480,7 +481,12 @@ label.invalid {
   margin-right: 14px;
 }
 
-.offer-form__input:last-child {
+.offer-form input {
+  width: 100%;
+  padding: 20px 24px;
+}
+
+.offer-form input:last-child {
   padding-left: 31px;
 }
 
@@ -540,12 +546,12 @@ label.invalid {
   }
   .offer-form__input {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .offer-form__input:first-child {
     margin-right: 0px;
   }
-  .offer-form__input:last-child {
+  .offer-form input:last-child {
     padding-left: 23px;
   }
   .offer-form__button {
@@ -609,7 +615,7 @@ label.invalid {
     font-size: 14px;
   }
   .offer-form__input {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
   .offer-form__button {
     padding: 20px 40px;
@@ -716,7 +722,7 @@ label.invalid {
 }
 
 .modal-form__input {
-  padding: 26px;
+  position: relative;
 }
 
 .modal-form__input:first-child {
@@ -725,6 +731,11 @@ label.invalid {
 
 .modal-form__input:last-child {
   margin-bottom: 30px;
+}
+
+.modal-form input {
+  padding: 26px;
+  width: 100%;
 }
 
 .modal-form__button {
@@ -768,15 +779,16 @@ label.invalid {
     line-height: 20px;
     margin-bottom: 20px;
   }
-  .modal-form__input {
-    padding: 10px;
-    font-size: 10px;
-  }
   .modal-form__input:first-child {
     margin-bottom: 10px;
   }
   .modal-form__input:last-child {
     margin-bottom: 15px;
+  }
+  .modal-form input {
+    line-height: 20px;
+    padding: 12px;
+    font-size: 12px;
   }
   .modal-form__button {
     padding: 12px;
@@ -794,6 +806,10 @@ label.invalid {
   .modal-info__phone {
     font-size: 14px;
   }
+  .modal label.invalid {
+    bottom: -10px;
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 620px) and (orientation: landscape) {
@@ -809,16 +825,6 @@ label.invalid {
   .modal-form__subtitle {
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 5px;
-  }
-  .modal-form__input {
-    padding: 10px;
-    font-size: 10px;
-  }
-  .modal-form__input:first-child {
-    margin-bottom: 5px;
-  }
-  .modal-form__input:last-child {
     margin-bottom: 5px;
   }
   .modal-form__button {
@@ -854,10 +860,6 @@ label.invalid {
     line-height: 20px;
     margin-bottom: 20px;
   }
-  .modal-form__input {
-    padding: 10px;
-    font-size: 10px;
-  }
   .modal-form__input:first-child {
     margin-bottom: 10px;
   }
@@ -865,8 +867,9 @@ label.invalid {
     margin-bottom: 15px;
   }
   .modal-form__button {
+    line-height: 20px;
     padding: 12px;
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 0;
     margin-bottom: 10px;
   }
@@ -879,6 +882,10 @@ label.invalid {
   }
   .modal-info__phone {
     font-size: 14px;
+  }
+  .modal label.invalid {
+    bottom: -10px;
+    font-size: 10px;
   }
 }
 
@@ -1429,10 +1436,14 @@ label.invalid {
 }
 
 .brif__input {
+  position: relative;
   height: 66px;
-  width: 100%;
   max-width: 370px;
   margin-bottom: 15px;
+}
+
+.brif input {
+  width: 100%;
 }
 
 .brif__button {
@@ -1578,13 +1589,12 @@ label.invalid {
     padding-left: 0;
   }
   .brif__input {
+    margin-left: auto;
+    margin-right: auto;
     max-width: 70%;
   }
   .brif__button {
     max-width: 70%;
-  }
-  .brif label.invalid {
-    width: 70%;
   }
 }
 
@@ -1594,7 +1604,7 @@ label.invalid {
   }
   .brif__input {
     max-width: 100%;
-    margin-bottom: 7px;
+    margin-bottom: 12px;
   }
   .brif__button {
     max-width: 100%;

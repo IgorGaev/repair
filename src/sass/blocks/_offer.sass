@@ -35,13 +35,16 @@
       margin-top: 29px
       display: flex
     &__input
-      width: 240px
-      padding: 20px 24px
+      position: relative
+      width: 240px      
       margin-bottom: 31px
       &:first-child
-        margin-right: 14px
+        margin-right: 14px      
+    input
+      width: 100%
+      padding: 20px 24px
       &:last-child
-        padding-left: 31px
+        padding-left: 31px    
     &__button
       width: 100%
       margin-bottom: 28px
@@ -76,11 +79,12 @@
         flex-direction: column
       &__input
         width: 100%        
-        margin-bottom: 10px
+        margin-bottom: 15px
         &:first-child
           margin-right: 0px
+      input
         &:last-child
-          padding-left: 23px
+          padding-left: 23px      
       &__button
         font-size: 13px
     &-info
@@ -124,7 +128,7 @@
       &__title     
         font-size: 14px
       &__input
-        margin-bottom: 8px
+        margin-bottom: 12px
       &__button
         padding: 20px 40px
         font-size: 14px

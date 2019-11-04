@@ -15,10 +15,12 @@
     padding-left: 209px
     text-align: center
   &__input
-    height: 66px
-    width: 100%
+    position: relative
+    height: 66px    
     max-width: 370px
     margin-bottom: 15px
+  input
+    width: 100%
   &__button
     height: 70px
     width: 100%
@@ -119,18 +121,18 @@
     &__form
       padding-left: 0
     &__input
+      margin-left: auto
+      margin-right: auto
       max-width: 70%        
     &__button
       max-width: 70%
-    label.invalid
-      width: 70%        
 
 @media ( max-width: 450px )
   .brif
     padding-top: 44px
     &__input
       max-width: 100%
-      margin-bottom: 7px
+      margin-bottom: 12px
     &__button
       max-width: 100%
       margin-top: 2px
