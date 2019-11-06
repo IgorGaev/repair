@@ -7,6 +7,7 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $name = $_POST['username'];
 $phone = $_POST['phone'];
+$email = $_POST['email'];
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 
 try {
@@ -31,7 +32,7 @@ try {
         $mail->isHTML(true);
     
         $mail->Subject = 'Новая заявка';
-        $mail->Body    = "<b>Имя:</b> $name <br> <b>Телефон:</b> $phone";
+        $mail->Body    = "<b>Имя:</b> $name <br> <b>Телефон:</b> $phone <br> <b>Эл. почта:</b> $email";
         
 // Проверяем отравленность сообщения
 if ($mail->send()) {

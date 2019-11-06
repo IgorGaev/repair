@@ -90,7 +90,7 @@
           <h2 class="offer__title">
             Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
           </h2>
-          <form action="mail.php" method="POST" id="offer-form" action="#" class="offer-form">
+          <form action="mail.php" action="mail.php" method="POST" id="offer-form" class="offer-form">
             <span class="offer-form__title">
               Оставьте заявку на разработку бесплатного дизайн-проекта!
             </span>
@@ -258,7 +258,7 @@
           <div class="form brif__form">
             <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
             <span class="form__subtitle">Для этого заполните форму ниже</span>
-            <form id="brif-form" action="#">
+            <form id="brif-form" action="mail.php" method="POST">
               <div class="input-wrap brif__input">
                 <input name="username" type="text" class="input"
                   placeholder="Ваше имя:">
@@ -329,7 +329,7 @@
       <h2 class="modal-dialog__title">
         Узнайте точную стоимость ремонта по телефону!
       </h2>
-      <form id="modal-form" action="#" class="modal-form">
+      <form id="modal-form" action="mail.php" method="POST" class="modal-form">
         <span class="modal-form__subtitle">
           Заполните поля ниже - мы свяжемся с Вами
         </span>
