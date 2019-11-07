@@ -3,6 +3,7 @@ $(function () {
   var modal = document.querySelector('#modal');
   var modalSuccess = document.querySelector('#modal-success');
   var close = document.querySelector('#close');
+  var closeSuccess = document.querySelector('#close-success');
 
   function showModal () {  
     modal.classList.add('modal_active');
@@ -17,7 +18,7 @@ $(function () {
 
   btn.addEventListener('click', showModal);
   close.addEventListener('click', hideModal);
-  close.addEventListener('click', hideModalSuccess);
+  closeSuccess.addEventListener('click', hideModalSuccess);
 
 
   /* Скрипт AJAX */
@@ -34,7 +35,6 @@ $(function () {
         console.log('Прибыли данные:' + response); // ответ в случае успеха    
         $('#offer-form')[0].reset(); // сброс формы
         modalSuccess.classList.add('modal_active');
-        // $('.offer-form__response').text(response); //выводим ссобщение ниже кнопки
       },
       error: function (jqXHR, textStatus, errorThrown) {
         console.error(jqXHR); // ответ в случае ошибки
@@ -54,7 +54,6 @@ $(function () {
         $('#modal-form')[0].reset(); // сброс формы
         modal.classList.remove('modal_active'); //закрываем модальную форму
         modalSuccess.classList.add('modal_active'); //выводим модальное подтверждение окно
-        // $('.offer-form__response').text(response); //выводим ссобщение ниже кнопки
       },
       error: function (jqXHR, textStatus, errorThrown) {
         console.error(jqXHR); // ответ в случае ошибки

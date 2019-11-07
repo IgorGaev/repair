@@ -320,9 +320,12 @@
     </div>
   </footer>
 
+
+
+  <!-- Модальное окно успешной отправки формы-->
   <div class="modal" id="modal-success">
     <div class="modal-dialog">
-      <button class="modal-dialog__close" id="close">&times;</button>
+      <button class="modal-dialog__close" id="close-success">&times;</button>
       <h2 class="modal-dialog__title">
         Спасибо за заявку, скоро мы вам перезвоним.
       </h2>
