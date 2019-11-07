@@ -64,14 +64,6 @@ input.invalid:focus {
   border: 1px solid red;
 }
 
-input.invalid:first-child {
-  margin-bottom: 2px;
-}
-
-input.invalid:last-child {
-  margin-bottom: 2px;
-}
-
 label.invalid {
   position: absolute;
   bottom: -12px;
@@ -456,6 +448,17 @@ label.invalid {
 .offer-form {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
+}
+
+.offer-form__response {
+  font-family: "Museo Sans 700", sans-serif;
+  font-weight: 700;
+  color: green;
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .offer-form__title {
@@ -484,10 +487,6 @@ label.invalid {
 .offer-form input {
   width: 100%;
   padding: 20px 24px;
-}
-
-.offer-form input:last-child {
-  padding-left: 31px;
 }
 
 .offer-form__button {
@@ -580,7 +579,7 @@ label.invalid {
   }
   .offer__title {
     line-height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .offer-form {
     width: 90%;
@@ -592,7 +591,7 @@ label.invalid {
     width: 100%;
   }
   .offer-form__button {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -620,7 +619,6 @@ label.invalid {
   .offer-form__button {
     padding: 20px 40px;
     font-size: 14px;
-    margin-bottom: 20px;
   }
   .offer-info__text {
     width: 90%;
