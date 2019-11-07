@@ -9,6 +9,7 @@
     display: flex
     justify-content: space-between
   &__interview
+    color: $text-color2
     flex-basis: 50%  
   &__form
     flex-basis: 50%
@@ -93,7 +94,7 @@
     padding-bottom: 50px
     &__title
       font-size: 20px
-      margin-bottom: 15px
+      margin-bottom: 30px
     &__subtitle
       margin-bottom: 30px
     &-list
@@ -105,7 +106,7 @@
   .form
     &__title
       font-size: 20px
-      margin-bottom: 15px
+      margin-bottom: 30px
     &__subtitle
       margin-bottom: 20px
 
@@ -129,10 +130,11 @@
 
 @media ( max-width: 450px )
   .brif
+    background-size: 100% 50%, cover
     padding-top: 44px
     &__input
       max-width: 100%
-      margin-bottom: 12px
+      margin-bottom: 7px
     &__button
       max-width: 100%
       margin-top: 2px
