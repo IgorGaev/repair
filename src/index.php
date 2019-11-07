@@ -102,7 +102,7 @@
                 <input name="phone" type="tel" class="phone input" placeholder="Ваш телефон" required>
               </div>
             </div>
-            <button class="button offer-form__button wow tada">
+            <button type="submit" class="button offer-form__button wow tada">
               Получить бесплатный дизайн-проект
             </button>
             <div class="offer-form__title offer-form__response "></div>

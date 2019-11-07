@@ -24,8 +24,12 @@ $(function () {
   /* Скрипт AJAX */
 
   // Установим обработчик отправки формы Submit, элементу с идентификатором offer-form
-  $('#offer-form').on('submit', function (event) {
+  $('#offer-form').submit(function (event) {
+
     event.preventDefault(); // останавливаем собитие, прерываем
+    var $form = $(this);
+
+    if(! $form.valid()) return false;
 
     $.ajax({
       type: "POST",
@@ -42,8 +46,12 @@ $(function () {
     });
   });
 
-  $('#modal-form').on('submit', function (event) {
+  $('#modal-form').submit(function (event) {
+
     event.preventDefault(); // останавливаем собитие, прерываем
+    var $form = $(this);
+
+    if (!$form.valid()) return false;
 
     $.ajax({
       type: "POST",
@@ -60,8 +68,13 @@ $(function () {
       }
     });
   });
-  $('#brif-form').on('submit', function (event) {
+  
+  $('#brif-form').submit(function (event) {
+
     event.preventDefault(); // останавливаем собитие, прерываем
+    var $form = $(this);
+
+    if (!$form.valid()) return false;
 
     $.ajax({
       type: "POST",
