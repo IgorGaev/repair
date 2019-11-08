@@ -156,32 +156,32 @@
           <span class="section-subtitle prices__subtitle">Прайс на наши услуги</span>
           <div class="prices-cards">
             <a class="prices-card wow fadeInUp" href="#" data-wow-duration="0.2s">
-              <div class="prices-card__image"><img src="img/prices/livingroom.png" alt=""></div>
+              <div class="prices-card__image"><img src="img/prices/livingroom.jpg" alt=""></div>
               <span class="prices-card__text">Ремонт ванных комнат и с/у</span>
               <span class="prices-card__link">Узнать цены</span>
             </a>
             <a href="#" class="prices-card wow fadeInUp" data-wow-duration="0.4s">
-              <div class="prices-card__image"><img src="img/prices/bathroom.png" alt=""></div>
+              <div class="prices-card__image"><img src="img/prices/bathroom.jpg" alt=""></div>
               <span class="prices-card__text">Ремонт комнат и квартир</span>
               <span class="prices-card__link">Узнать цены</span>
             </a>
             <a href="#" class="prices-card wow fadeInUp" data-wow-duration="0.6s">
-              <div class="prices-card__image"><img src="img/prices/office.png" alt=""></div>
+              <div class="prices-card__image"><img src="img/prices/office.jpg" alt=""></div>
               <span class="prices-card__text">Отделка офисных помещений</span>
               <span class="prices-card__link">Узнать цены</span>
             </a>
             <a href="#" class="prices-card wow fadeInUp" data-wow-duration="0.8s">
-              <div class="prices-card__image"><img src="img/prices/mansarda.png" alt=""></div>
+              <div class="prices-card__image"><img src="img/prices/mansarda.jpg" alt=""></div>
               <span class="prices-card__text">Ремонт в новостройках</span>
               <span class="prices-card__link">Узнать цены</span>
             </a>
             <a href="#" class="prices-card wow fadeInUp" data-wow-duration="1s">
-              <div class="prices-card__image"><img src="img/prices/kitchen.png" alt=""></div>
+              <div class="prices-card__image"><img src="img/prices/kitchen.jpg" alt=""></div>
               <span class="prices-card__text">Ремонт кухонь</span>
               <span class="prices-card__link">Узнать цены</span>
             </a>
             <a href="#" class="prices-card wow fadeInUp" data-wow-duration="1.2s">
-              <div class="prices-card__image"><img src="img/prices/novostroi.png" alt=""></div>
+              <div class="prices-card__image"><img src="img/prices/novostroi.jpg" alt=""></div>
               <span class="prices-card__text">Ремонт дач и коттеджей</span>
               <span class="prices-card__link">Узнать цены</span>
             </a>
