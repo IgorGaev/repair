@@ -22,6 +22,11 @@ gulp.task('minify-js', () => {
   .pipe(gulp.dest('build/js'));
 });
 
+gulp.task('pipe-js', () => {
+  return gulp.src('src/js/*.min.js')
+    .pipe(gulp.dest('build/js'));
+});
+
 /* Сожми и перенеси html файлы */
 gulp.task('minify', () => {
   return gulp.src('src/*.html')
@@ -57,5 +62,5 @@ gulp.task('img', function () {
     .pipe(gulp.dest('build/img'));
 });
 
-gulp.task('build', gulp.series('minify-css', 'minify-js', 'minify', 'img'));
+gulp.task('build', gulp.series('minify-css', 'minify-js', 'pipe-js' ,'minify', 'img'));
 
