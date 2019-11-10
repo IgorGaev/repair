@@ -349,6 +349,7 @@ template {
 
 @font-face {
   font-family: "Museo Sans 300";
+  font-display: swap;
   src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot");
   src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-300.ttf") format("truetype");
   font-style: normal;
@@ -357,6 +358,7 @@ template {
 
 @font-face {
   font-family: "Museo Sans 700";
+  font-display: swap;
   src: url("../fonts/MuseoSans/MuseoSansCyrl-700.eot");
   src: url("../fonts/MuseoSans/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-700.ttf") format("truetype");
   font-style: normal;
@@ -435,6 +437,10 @@ label.invalid {
 }
 
 @media (max-width: 798px) {
+  label.invalid {
+    bottom: -8px;
+    font-size: 9px;
+  }
   .container {
     max-width: 576px;
   }
@@ -1014,7 +1020,7 @@ label.invalid {
 .hero-list__text {
   font-size: 14px;
   line-height: 25px;
-  width: 40%;
+  width: 50%;
 }
 
 .hero-image {
@@ -1502,10 +1508,6 @@ label.invalid {
   .modal-info__phone {
     font-size: 14px;
   }
-  .modal label.invalid {
-    bottom: -10px;
-    font-size: 10px;
-  }
 }
 
 @media (max-width: 620px) and (orientation: landscape) {
@@ -1563,6 +1565,7 @@ label.invalid {
     margin-bottom: 15px;
   }
   .modal-form__button {
+    height: 46px;
     line-height: 20px;
     padding: 12px;
     font-size: 12px;
@@ -1578,10 +1581,6 @@ label.invalid {
   }
   .modal-info__phone {
     font-size: 14px;
-  }
-  .modal label.invalid {
-    bottom: -10px;
-    font-size: 10px;
   }
 }
 
@@ -1628,7 +1627,7 @@ label.invalid {
   color: #fff;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 798px) {
   #button-up {
     width: 30px;
     height: 30px;
@@ -1679,7 +1678,7 @@ label.invalid {
 
 @media (max-width: 1200px) {
   .portfolio__title {
-    max-width: 100%;
+    max-width: 80%;
     margin-bottom: 50px;
   }
   .slick-slide img {
@@ -1912,7 +1911,7 @@ label.invalid {
         align-content: center;
   }
   .prices-card {
-    width: 85%;
+    width: 48%;
     padding-bottom: 15px;
     margin-bottom: 33px;
   }
@@ -2250,7 +2249,7 @@ label.invalid {
     background-size: 50%, auto;
   }
   .brif__form {
-    padding-left: 80px;
+    padding-left: 100px;
   }
   .brif__input {
     max-width: 100%;
@@ -2289,7 +2288,7 @@ label.invalid {
   .brif {
     background-image: url("../img/brif/brif_bg_color.jpg"), url("../img/brif/brif_bg.jpg");
     background-position: top center, center bottom;
-    background-size: 100% 44%, cover;
+    background-size: 100% 50%, cover;
     background-repeat: repeat-x, no-repeat;
     padding-bottom: 40px;
   }
@@ -2444,7 +2443,7 @@ label.invalid {
   .contacts__title {
     font-size: 20px;
     margin-bottom: 50px;
-    width: 100%;
+    width: 78%;
   }
   .contacts-list__text {
     width: 45%;
@@ -2459,6 +2458,9 @@ label.invalid {
 }
 
 @media (max-width: 1022px) {
+  .contacts__title {
+    width: 100%;
+  }
   .contacts-list__text {
     width: 62%;
   }
@@ -2487,11 +2489,15 @@ label.invalid {
     padding: 30px 50px 30px 50px;
   }
   .contacts__title {
+    text-align: center;
     font-size: 20px;
     margin-bottom: 30px;
   }
+  .contacts-list__item {
+    margin-left: 50px;
+  }
   .contacts-list__text {
-    width: 100%;
+    width: 50%;
   }
 }
 
@@ -2500,11 +2506,13 @@ label.invalid {
     padding: 53px 0 54px 0;
   }
   .contacts__title {
+    text-align: left;
     line-height: 1.2;
     font-size: 18px;
   }
   .contacts-list__item {
     margin-bottom: 32px;
+    margin-left: 0;
   }
   .contacts-list__icon {
     margin-right: 6px;

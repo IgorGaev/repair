@@ -8,9 +8,6 @@
 
   <title>Сайт ремонт квартир</title>
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
@@ -61,7 +58,7 @@
               <li class="hero-list__item">
                 <div class="hero-list__icon"><img src="img/hero/calculator.png" alt="Иконка"></div>
                 <span class="hero-list__text">Рассчитаем смету на работы
-                  и&nbsp;материалы в день обращения
+                  и&nbsp;материалы в&nbsp;день обращения
                 </span>
               </li>
               <li class="hero-list__item">
@@ -74,7 +71,7 @@
           </div>
           <!-- /.hero-text -->
           <div class="hero-image wow fadeInRight">
-            <img src="img/hero/hero_picture.png" alt="Планировка комнаты">
+            <img src="img/hero/hero_picture.jpg" alt="Планировка комнаты">
           </div>
           <!-- /.hero-image -->
         </div>
@@ -88,11 +85,11 @@
       <div class="container">
         <div class="offer-block ">
           <h2 class="offer__title">
-            Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
+            Мы бесплатно разработаем дизайн-проект Вашего жилья и&nbsp;реализуем его!
           </h2>
           <form action="mail.php" method="POST" id="offer-form" class="offer-form">
             <span class="offer-form__title">
-              Оставьте заявку на разработку бесплатного дизайн-проекта!
+              Оставьте заявку на разработку бесплатного&nbsp;дизайн-проекта!
             </span>
             <div class="offer-form__inputs">
               <div class="input-wrap offer-form__input">
@@ -111,13 +108,13 @@
           <div class="offer-info">
             <div class="offer-info__item">
               <p class="offer-info__text">
-                Наш менеджер перезвонит&nbsp;Вам в течение 60 секунд
+                Наш менеджер перезвонит&nbsp;Вам в&nbsp;течение 60&nbsp;секунд
               </p>
             </div>
             <div class="offer-info__item">
               <p class="offer-info__text">
                 или перезвоните нам сами
-                <a class="offer-info__phone" href="tel:+7(495)42-251-31">+7&nbsp;(495) 42-251-31</a>
+                <a class="offer-info__phone" href="tel:+7(495)42-251-31">+7&nbsp;(495)&nbsp;42-251-31</a>
               </p>
             </div>
           </div>
@@ -131,7 +128,7 @@
     <section class="section portfolio">
       <div class="container">
         <h2 class="portfolio__title section-title">
-          Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и&nbsp;домах
+          Работая с 2007 года,<br> мы сделали более 500 ремонтов в&nbsp;квартирах и&nbsp;домах
         </h2>
         <div class="portfolio-slider wow fadeInUp">
           <div class="slider-item"><img class="portfolio__image" src="img/portfolio/portfolio_img_1.jpg" alt=""></div>
@@ -152,7 +149,7 @@
     <section class="section prices">
       <div class="container">
         <div class="prices-block">
-          <h2 class="section-title prices__title">У нас очень гибкая система скидок на комплексные работы!</h2>
+          <h2 class="section-title prices__title">У нас очень гибкая система скидок на&nbsp;комплексные работы!</h2>
           <span class="section-subtitle prices__subtitle">Прайс на наши услуги</span>
           <div class="prices-cards">
             <a class="prices-card wow fadeInUp" href="#" data-wow-duration="0.2s">
@@ -192,15 +189,14 @@
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.section prices -->   
+    <!-- /.section prices -->
 
     <section class="section brif">
       <div class="container">
         <div class="brif-block">
           <div class="interview brif__interview">
-            <h3 class="interview__title">Мы можем озвучить Вам примерную стоимость работы и материалов по
-              телефону
-            </h3>
+            <h3 class="interview__title">Мы можем озвучить Вам примерную стоимость работы и&nbsp;материалов
+              по&nbsp;телефону</h3>
             <span class="interview__subtitle">Для этого нужно ответить на 4 вопроса:</span>
             <ul class="interview-list">
               <li class="interview-list__item">
@@ -224,7 +220,7 @@
           </div>
           <!-- /.interview brif__interview -->
           <div class="form brif__form">
-            <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
+            <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по&nbsp;телефону</h3>
             <span class="form__subtitle">Для этого заполните форму ниже</span>
             <form id="brif-form" action="mail.php" method="POST">
               <div class="input-wrap brif__input">
@@ -252,14 +248,11 @@
 
   <footer class="footer">
     <div class="map" id="map">
-      <script type="text/javascript" charset="utf-8" async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1aaa48195fe2b0df6a09d65849e891e69b687fafc4feb2deffa76a7b1fe3f37a&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false">
-      </script>
     </div>
     <div class="container">
       <div class="contacts-block">
         <div class="contacts">
-          <h3 class="contacts__title"> Приезжайте к нам в гости! Проконсультируем Вас по&nbsp;всем вопросам ремонта</h3>
+          <h3 class="contacts__title"> Приезжайте к нам в гости! Проконсультируем Вас по&nbsp;всем&nbsp;вопросам ремонта</h3>
           <ul class="contacts-list">
             <li class="contacts-list__item">
               <div class="contacts-list__icon">

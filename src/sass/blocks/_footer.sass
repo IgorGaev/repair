@@ -40,7 +40,7 @@
     &__title
       font-size: 20px
       margin-bottom: 50px
-      width: 100%
+      width: 78%
     &-list
       &__text
         width: 45%
@@ -52,6 +52,8 @@
 
 @media ( max-width: 1022px )
   .contacts
+    &__title
+      width: 100%
     &-list
       &__text
         width: 62%
@@ -71,22 +73,26 @@
     flex-basis: 100%
     padding: 30px 50px 30px 50px 
     &__title
+      text-align: center
       font-size: 20px
       margin-bottom: 30px
     &-list
       &__item
+        margin-left: 50px
       &__text
-        width: 100%
+        width: 50%
 
 @media ( max-width: 450px )
   .contacts
     padding: 53px 0 54px 0 
     &__title
+      text-align: left
       line-height: 1.2
       font-size: 18px
     &-list
       &__item
         margin-bottom: 32px
+        margin-left: 0
       &__icon
         margin-right: 6px
         margin-top: 7px

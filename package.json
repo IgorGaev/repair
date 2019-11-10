@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "gulp-htmlmin": "^5.0.1",
+    "gulp-rename": "^1.4.0",
     "gulp-tinifier": "^1.0.2",
     "imagemin-jpeg-recompress": "^6.0.0",
     "imagemin-pngquant": "^8.0.0",

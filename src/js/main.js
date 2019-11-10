@@ -1,4 +1,18 @@
 $(function () {
+
+  /* Показывать карту только когда докрутили до нее*/
+  var brif = $('.brif');
+  // var brifTop = brif.offset().top;
+  
+  $(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 2800) {
+      $('#map').html('<script type="text/javascript" charset="utf-8" async src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1aaa48195fe2b0df6a09d65849e891e69b687fafc4feb2deffa76a7b1fe3f37a&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false" ></script>');
+      console.log("Привет2");
+      $(window).unbind('scroll')
+    }
+  });
+
+  /* Появление и закрытие модального окна */
   var btn = document.querySelector('#button');
   var modal = document.querySelector('#modal');
   var modalSuccess = document.querySelector('#modal-success');
@@ -90,5 +104,9 @@ $(function () {
       }
     });
   });
+
+  
+
+
 
 });
