@@ -71,7 +71,12 @@
       &:hover
         box-shadow: none
         .prices-card__image::before       
-          opacity: 0     
+          opacity: 0
+      &__link
+        &:hover
+          &::after
+            height: 3px
+
 
 @media ( max-width: 1200px )    
   .prices

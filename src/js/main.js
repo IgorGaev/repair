@@ -47,7 +47,7 @@ $(function () {
 
     $.ajax({
       type: "POST",
-      url: "mail.php",
+      url: "php/mail.php",
       data: $(this).serialize(), // склеиваем все данные в одну строчку
       success: function (response) {
         console.log('Прибыли данные:' + response); // ответ в случае успеха    
@@ -69,7 +69,7 @@ $(function () {
 
     $.ajax({
       type: "POST",
-      url: "mail.php",
+      url: "php/mail.php",
       data: $(this).serialize(), // склеиваем все данные в одну строчку
       success: function (response) {
         console.log('Прибыли данные:' + response); // ответ в случае успеха    
@@ -92,7 +92,7 @@ $(function () {
 
     $.ajax({
       type: "POST",
-      url: "mail.php",
+      url: "php/mail.php",
       data: $(this).serialize(), // склеиваем все данные в одну строчку
       success: function (response) {
         console.log('Прибыли данные:' + response); // ответ в случае успеха    
