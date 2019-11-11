@@ -5,13 +5,12 @@ const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
 const imageminJpegRecompress = require('imagemin-jpeg-recompress');
 const imageminPngquant = require('imagemin-pngquant');
-var rename = require("gulp-rename");
 
 /* CSS  */
 gulp.task('minify-css', () => {
   return gulp.src('src/css/*.css')
     .pipe(cleanCSS())
-    .pipe(gulp.dest('build/css'));
+    .pipe(gulp.dest('dist/css'));
 });
 
 
@@ -19,19 +18,31 @@ gulp.task('minify-css', () => {
 gulp.task('minify-js', () => {
   return gulp.src(['src/js/*.js', '!src/js/*.min.js'])
   .pipe(jsmin())
-  .pipe(gulp.dest('build/js'));
+  .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('pipe-js', () => {
   return gulp.src('src/js/*.min.js')
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest('dist/js'));
 });
 
 /* Сожми и перенеси html файлы */
 gulp.task('minify', () => {
   return gulp.src('src/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('build/'));
+    .pipe(gulp.dest('dist/'));
+});
+
+/* Переносим php */
+gulp.task('pipe-php', () => {
+  return gulp.src('src/php/*.php')
+    .pipe(gulp.dest('dist/php'));
+});
+
+/* Переносим шрифты */
+gulp.task('pipe-fonts', () => {
+  return gulp.src('src/fonts/**/*')
+    .pipe(gulp.dest('dist/fonts'));
 });
 
 /* Сжимаем изображения */
@@ -59,8 +70,8 @@ gulp.task('img', function () {
         speed: 5 
       })
     ]))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('build', gulp.series('minify-css', 'minify-js', 'pipe-js' ,'minify', 'img'));
+gulp.task('dist', gulp.series('minify-css', 'minify-js', 'pipe-fonts', 'pipe-php', 'pipe-js' ,'minify', 'img'));
 
