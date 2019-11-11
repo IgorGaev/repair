@@ -6,11 +6,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url(c:\Soft\Open Server 5.3.5\OSPanel\domains\repair\src\sass\animate\attention_seekers\heartBeat.css);
-@import url(c:\Soft\Open Server 5.3.5\OSPanel\domains\repair\src\sass\animate\attention_seekers\tada.css);
-@import url(c:\Soft\Open Server 5.3.5\OSPanel\domains\repair\src\sass\animate\fading_entrances\fadeInRight.css);
-@import url(c:\Soft\Open Server 5.3.5\OSPanel\domains\repair\src\sass\animate\fading_entrances\fadeInUp.css);
-@import url(c:\Soft\Open Server 5.3.5\OSPanel\domains\repair\src\sass\animate\flippers\flipInX.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -874,6 +869,251 @@ label.invalid {
     -webkit-animation-iteration-count: 1 !important;
             animation-iteration-count: 1 !important;
   }
+}
+
+@-webkit-keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  14% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  28% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  42% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  14% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  28% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  42% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.heartBeat {
+  -webkit-animation-name: heartBeat;
+          animation-name: heartBeat;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  -webkit-animation-name: tada;
+          animation-name: tada;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+}
+
+@-webkit-keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  to {
+    -webkit-transform: perspective(400px);
+            transform: perspective(400px);
+  }
+}
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  to {
+    -webkit-transform: perspective(400px);
+            transform: perspective(400px);
+  }
+}
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+          backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+          animation-name: flipInX;
 }
 
 /* ================================================== */
@@ -1978,166 +2218,6 @@ label.invalid {
     width: 97%;
     padding-bottom: 30px;
     margin-bottom: 33px;
-  }
-}
-
-/* =========================================================== */
-/* Блок Steps */
-.step {
-  -ms-flex-preferred-size: 13%;
-      flex-basis: 13%;
-  text-align: center;
-  position: relative;
-}
-
-.step:after {
-  content: '';
-  position: absolute;
-  top: -10px;
-  right: -76px;
-  width: 72px;
-  height: 25px;
-  background: url("../img/steps/arrow.png") no-repeat center;
-}
-
-.step:last-child::after {
-  display: none;
-}
-
-.step__image {
-  margin: auto;
-  width: 100px;
-  height: 100px;
-  border: 3px solid #ffd200;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 26px;
-}
-
-.step__text {
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.steps {
-  color: #000000;
-  padding-bottom: 100px;
-}
-
-.steps__title {
-  margin: auto;
-  margin-top: 122px;
-  margin-bottom: 39px;
-  max-width: 60%;
-}
-
-.steps__subtitle {
-  text-align: center;
-  margin-bottom: 57px;
-}
-
-.steps-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-@media (max-width: 1200px) {
-  .steps__title {
-    max-width: 75%;
-    margin-bottom: 25px;
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 1022px) {
-  .step::after {
-    display: none;
-  }
-}
-
-@media (max-width: 798px) {
-  .steps__title {
-    max-width: 90%;
-    font-size: 18px;
-    line-height: 1.2;
-    margin-bottom: 16px;
-    margin-top: 0px;
-  }
-  .steps__subtitle {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  .step {
-    margin-bottom: 30px;
-    -ms-flex-preferred-size: 35%;
-        flex-basis: 35%;
-  }
-  .step__text {
-    font-size: 12px;
-  }
-  .step__image {
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width: 450px) {
-  .step {
-    margin-bottom: 22px;
-  }
-  .step:first-child {
-    margin-bottom: 12px;
-  }
-  .step:first-child .step__image {
-    margin-bottom: 21px;
-  }
-  .step__image {
-    margin: auto;
-    margin-bottom: 28px;
-  }
-  .step__text {
-    font-family: "Museo Sans 700", sans-serif;
-    font-weight: 700;
-    width: 50%;
-    font-size: 12px;
-    line-height: 16px;
-    margin: auto;
-  }
-  .step::after {
-    display: none;
-  }
-  .steps__title {
-    margin: 0;
-    max-width: 100%;
-    font-size: 18px;
-    line-height: 1.2;
-    margin-bottom: 10px;
-  }
-  .steps__subtitle {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 45px;
-    margin-bottom: 18px;
-  }
-  .steps-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-line-pack: center;
-        align-content: center;
   }
 }
 
