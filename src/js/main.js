@@ -6,8 +6,8 @@ $(function () {
   
   $(window).bind('scroll', function () {
     if ($(window).scrollTop() > 2800) {
-      $('#map').html('<script type="text/javascript" charset="utf-8" async src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1aaa48195fe2b0df6a09d65849e891e69b687fafc4feb2deffa76a7b1fe3f37a&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false" ></script>');
-      console.log("Привет2");
+      $('#map').html('<iframe src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2251.2494020712556!2d37.328022315824185!3d55.64987098052598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b551900ace55f5%3A0x75b85b064703fe60!2z0YPQuy4g0JvQtdC90LjQvdCwLCA3LCDQnNC40YfRg9GA0LjQvdC10YYsINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDExOTYzNA!5e0!3m2!1sru!2sru!4v1573541192171!5m2!1sru!2sru" width = "100%" height = "640" frameborder = "0" style = "border:0;" allowfullscreen = "" ></iframe>');
+      console.log("Карта заггурзилась");
       $(window).unbind('scroll')
     }
   });
@@ -21,18 +21,22 @@ $(function () {
 
   function showModal () {  
     modal.classList.add('modal_active');
+    $("body").addClass("modal-open");
   };
 
   function hideModal () {
     modal.classList.remove('modal_active');
+    $("body").removeClass("modal-open");
   };
   function hideModalSuccess () {
     modalSuccess.classList.remove('modal_active');
+    $("body").removeClass("modal-open");
+    
   };
 
   btn.addEventListener('click', showModal);
   close.addEventListener('click', hideModal);
-  closeSuccess.addEventListener('click', hideModalSuccess);
+  closeSuccess.addEventListener('click', hideModalSuccess);  
 
 
   /* Скрипт AJAX */

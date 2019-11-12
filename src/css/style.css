@@ -373,6 +373,11 @@ body {
   color: #333333;
 }
 
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+}
+
 a {
   text-decoration: none;
   color: #333333;
@@ -400,6 +405,10 @@ img {
           align-items: center;
 }
 
+main {
+  z-index: 1;
+}
+
 input.invalid {
   display: block;
   border: 1px solid red;
@@ -411,32 +420,27 @@ input.invalid:focus {
 
 label.invalid {
   position: absolute;
-  bottom: -12px;
+  bottom: -10px;
   width: 100%;
   display: block;
   text-align: left;
   font-size: 12px;
   color: red;
-  z-index: 1000;
 }
 
 @media (max-width: 1200px) {
   .container {
-    max-width: 992px;
+    max-width: 962px;
   }
 }
 
-@media (max-width: 1022px) {
+@media (max-width: 992px) {
   .container {
     max-width: 768px;
   }
 }
 
 @media (max-width: 798px) {
-  label.invalid {
-    bottom: -8px;
-    font-size: 9px;
-  }
   .container {
     max-width: 576px;
   }
@@ -445,6 +449,10 @@ label.invalid {
 @media (max-width: 606px) {
   .container {
     max-width: 420px;
+  }
+  label.invalid {
+    bottom: -8px;
+    font-size: 10px;
   }
 }
 
@@ -1279,7 +1287,7 @@ label.invalid {
           box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
 }
 
-@media (max-width: 1022px) {
+@media (max-width: 992px) {
   .hero-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1520,7 +1528,7 @@ label.invalid {
   }
 }
 
-@media (max-width: 1022px) {
+@media (max-width: 992px) {
   .offer-block {
     padding: 30px 30px 30px 0;
   }
@@ -1598,6 +1606,7 @@ label.invalid {
 /* =========================================================== */
 /* Modal */
 .modal {
+  z-index: 2;
   position: fixed;
   left: 0;
   top: 0;
@@ -1635,6 +1644,11 @@ label.invalid {
 }
 
 .modal-dialog__close {
+  background-color: #ffd200;
+  border: none;
+  color: #333333;
+  font-family: "Museo Sans 700", sans-serif;
+  font-weight: 700;
   position: absolute;
   top: 0;
   right: 0;
@@ -1646,7 +1660,6 @@ label.invalid {
   cursor: pointer;
   background-color: #ffdb33;
   outline: none;
-  border: 1px solid #cca800;
 }
 
 .modal-form__subtitle {
@@ -1722,6 +1735,11 @@ label.invalid {
     line-height: 24px;
     margin-bottom: 25px;
   }
+  .modal-dialog__close {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
   .modal-form__subtitle {
     font-size: 14px;
     line-height: 20px;
@@ -1739,8 +1757,9 @@ label.invalid {
     font-size: 12px;
   }
   .modal-form__button {
+    height: auto;
     padding: 12px;
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 0;
     margin-bottom: 10px;
   }
@@ -2110,7 +2129,7 @@ label.invalid {
   }
 }
 
-@media (max-width: 1022px) {
+@media (max-width: 992px) {
   .prices-card {
     width: 48%;
   }
@@ -2560,7 +2579,7 @@ label.invalid {
   }
 }
 
-@media (max-width: 1022px) {
+@media (max-width: 992px) {
   .contacts__title {
     width: 100%;
   }

@@ -1,4 +1,5 @@
 .modal
+  z-index: 2
   position: fixed
   left: 0
   top: 0
@@ -25,6 +26,10 @@
       margin-bottom: 35px
       +bold     
     &__close
+      background-color: $main-color
+      border: none
+      color: $text-color
+      +bold
       position: absolute
       top: 0
       right: 0
@@ -34,7 +39,6 @@
         cursor: pointer
         background-color: lighten($main-color, 10%)
         outline: none
-        border: 1px solid darken($main-color, 10%)
   &-form
     &__subtitle
       text-align: center
@@ -85,6 +89,10 @@
         font-size: 16px
         line-height: 24px
         margin-bottom: 25px
+      &__close
+        width: 20px
+        height: 20px
+        font-size: 12px  
     &-form
       &__subtitle
         font-size: 14px
@@ -100,8 +108,9 @@
         padding: 12px
         font-size: 12px      
       &__button
+        height: auto
         padding: 12px
-        font-size: 10px
+        font-size: 12px
         margin-top: 0
         margin-bottom: 10px
     &-info
